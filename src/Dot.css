@@ -1,11 +1,55 @@
 .dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: black;
-    margin-top: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  background-color: black;
+  margin: 10px;
+  line-height: 325px;
+  text-align: center;
+  justify-content: center;
+  color: yellow;
+  font-size: 75px;
+  user-select: none;
 }
 
-.dot + .dot {
-    margin-left: 10px;
+.dot:hover {
+  background-color: blue;
+}
+
+@media (max-width: 1600px) {
+  .dot {
+    width: 250px;
+    height: 250px;
+    line-height: 225px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .dot {
+    width: 200px;
+    height: 200px;
+    line-height: 175px;
+  }
+}
+
+@media (max-width: 640px) {
+  .dot {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dots-wrapper{
+    height: 50vh;
+  }
+
+  .dot {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+  }
 }
